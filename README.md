@@ -6,7 +6,7 @@ An intermediate 3D exchange format for Unreal Engine asset extraction.
 
 [![Discord](https://img.shields.io/discord/866821077769781249?logo=discord&logoColor=white&label=Discord&color=7289da)](https://discord.gg/fortniteporting)
 [![Blender](https://img.shields.io/badge/Blender-4.2+-blue?logo=blender&logoColor=white&color=orange)](https://www.blender.org/download/)
-[![Unreal](https://img.shields.io/badge/Unreal-5.8+-blue?logo=unreal-engine&logoColor=white&color=white)](https://www.unrealengine.com/en-US/download)
+[![Unreal](https://img.shields.io/badge/Unreal-4.27-blue?logo=unreal-engine&logoColor=white&color=white)](https://www.unrealengine.com/en-US/download)
 [![Release](https://img.shields.io/github/release/h4lfheart/UEFormat)]()
 [![Downloads](https://img.shields.io/github/downloads/h4lfheart/UEFormat/total?color=green)]()
 

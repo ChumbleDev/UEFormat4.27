@@ -3,7 +3,9 @@
 #include "Archive/UEFormatReader.h"
 #include <string>
 
-namespace UEFormat::Legacy
+namespace UEFormat
+{
+namespace Legacy
 {
 	template<typename TCallback>
 	void ForEachChunk(FUEFormatReader& Ar, TCallback&& Callback)
@@ -18,4 +20,5 @@ namespace UEFormat::Legacy
 			Ar.Seek(Start + ByteSize);
 		}
 	}
+}
 }

@@ -6,6 +6,7 @@ public class UEFormat : ModuleRules
 	public UEFormat(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		bEnableUndefinedIdentifierWarnings = false;
 
 		PublicIncludePaths.AddRange(
 			new string[]
@@ -19,7 +20,7 @@ public class UEFormat : ModuleRules
 				Path.Combine(ModuleDirectory, "ThirdParty/zstd/legacy")
 			}
 		);
-        
+
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
@@ -28,7 +29,6 @@ public class UEFormat : ModuleRules
 				"Engine",
 				"MeshDescription",
 				"StaticMeshDescription",
-				"SkeletalMeshDescription",
 				"AssetTools",
 				"UnrealEd",
 				"SkeletalMeshUtilitiesCommon"
@@ -40,9 +40,13 @@ public class UEFormat : ModuleRules
 			{
 				"Slate",
 				"SlateCore",
+				"EditorStyle",
 				"EditorWidgets",
 				"MainFrame",
-				"ToolWidgets"
+				"PropertyEditor",
+				"MeshBuilder",
+				"MeshUtilities",
+				"TargetPlatform"
 			}
 		);
 	}

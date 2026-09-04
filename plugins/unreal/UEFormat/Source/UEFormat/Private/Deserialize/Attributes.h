@@ -3,7 +3,9 @@
 #include "Archive/UEFormatReader.h"
 #include <string>
 
-namespace UEFormat::Deserialize
+namespace UEFormat
+{
+namespace Deserialize
 {
 	template<typename TCallback>
 	void ForEachAttribute(FUEFormatReader& Ar, TCallback&& Callback)
@@ -17,4 +19,5 @@ namespace UEFormat::Deserialize
 			Callback(Name, Payload);
 		}
 	}
+}
 }

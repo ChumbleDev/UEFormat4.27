@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Compat/UEFormatTypes.h"
 #include "Animation/AnimTypes.h"
 #include "Math/Quat.h"
 #include <string>

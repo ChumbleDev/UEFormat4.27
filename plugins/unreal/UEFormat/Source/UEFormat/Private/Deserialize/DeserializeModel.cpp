@@ -3,7 +3,9 @@
 #include "Deserialize/DeserializeLOD.h"
 #include "Deserialize/DeserializeSkeleton.h"
 
-namespace UEFormat::Deserialize
+namespace UEFormat
+{
+namespace Deserialize
 {
 	void ReadModel(FUEFormatReader& Ar, TArray<FLODData>& OutLODs, FSkeletonData& OutSkeleton)
 	{
@@ -32,4 +34,5 @@ namespace UEFormat::Deserialize
 			}
 		});
 	}
+}
 }

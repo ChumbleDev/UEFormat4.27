@@ -3,7 +3,9 @@
 #include "Legacy/LegacyLOD.h"
 #include "Legacy/LegacySkeleton.h"
 
-namespace UEFormat::Legacy
+namespace UEFormat
+{
+namespace Legacy
 {
 	void ReadModel(FUEFormatReader& Ar, TArray<FLODData>& OutLODs, FSkeletonData& OutSkeleton)
 	{
@@ -30,4 +32,5 @@ namespace UEFormat::Legacy
 			}
 		});
 	}
+}
 }

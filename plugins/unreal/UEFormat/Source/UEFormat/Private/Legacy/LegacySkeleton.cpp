@@ -1,7 +1,9 @@
 #include "Legacy/LegacySkeleton.h"
 #include "Legacy/Chunks.h"
 
-namespace UEFormat::Legacy
+namespace UEFormat
+{
+namespace Legacy
 {
 	void ReadSkeleton(FUEFormatReader& Ar, FSkeletonData& OutSkeleton)
 	{
@@ -47,4 +49,5 @@ namespace UEFormat::Legacy
 			}
 		});
 	}
+}
 }

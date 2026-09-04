@@ -1,7 +1,9 @@
 #include "Deserialize/DeserializeLOD.h"
 #include "Deserialize/Attributes.h"
 
-namespace UEFormat::Deserialize
+namespace UEFormat
+{
+namespace Deserialize
 {
 	void ReadLOD(FUEFormatReader& Ar, FLODData& OutLOD)
 	{
@@ -99,4 +101,5 @@ namespace UEFormat::Deserialize
 			}
 		});
 	}
+}
 }

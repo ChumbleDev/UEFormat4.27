@@ -1,7 +1,9 @@
 #include "Legacy/LegacyLOD.h"
 #include "Legacy/Chunks.h"
 
-namespace UEFormat::Legacy
+namespace UEFormat
+{
+namespace Legacy
 {
 	void ReadLOD(FUEFormatReader& Ar, FLODData& OutLOD)
 	{
@@ -87,4 +89,5 @@ namespace UEFormat::Legacy
 			}
 		});
 	}
+}
 }

@@ -1,7 +1,9 @@
 #include "Legacy/LegacyAnim.h"
 #include "Legacy/Chunks.h"
 
-namespace UEFormat::Legacy
+namespace UEFormat
+{
+namespace Legacy
 {
 	void ReadAnim(FUEFormatReader& Ar, FAnimData& OutAnim)
 	{
@@ -68,4 +70,5 @@ namespace UEFormat::Legacy
 			}
 		});
 	}
+}
 }

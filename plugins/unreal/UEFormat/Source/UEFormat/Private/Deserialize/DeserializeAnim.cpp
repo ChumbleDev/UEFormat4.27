@@ -1,7 +1,9 @@
 #include "Deserialize/DeserializeAnim.h"
 #include "Deserialize/Attributes.h"
 
-namespace UEFormat::Deserialize
+namespace UEFormat
+{
+namespace Deserialize
 {
 	static void ReadVectorKeys(FUEFormatReader& Ar, TArray<FVectorKey>& OutKeys)
 	{
@@ -75,4 +77,5 @@ namespace UEFormat::Deserialize
 			}
 		});
 	}
+}
 }
